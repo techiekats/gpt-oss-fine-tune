@@ -70,6 +70,7 @@ trainer = SFTTrainer(
 )
 trainer.train()
 
-trainer.save_model(training_args.output_dir)
-trainer.push_to_hub(dataset_name="HuggingFaceH4/Multilingual-Thinking")
-print ('pushed to hub')
+# ## This part is optional. Commenting it out
+# trainer.save_model(training_args.output_dir)
+# trainer.push_to_hub(dataset_name="HuggingFaceH4/Multilingual-Thinking")
+# print ('pushed to hub')
